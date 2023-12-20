@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Pokedex</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./pokedex.js" defer></script>
+  </head>
+  <body>
+    <div class="bubbles">
+      <span style="--i: 21"></span>
+      <span style="--i: 40"></span>
+      <span style="--i: 24"></span>
+      <span style="--i: 20"></span>
+      <span style="--i: 34"></span>
+      <span style="--i: 23"></span>
+      <span style="--i: 48"></span>
+      <span style="--i: 36"></span>
+      <span style="--i: 19"></span>
+      <span style="--i: 30"></span>
+      <span style="--i: 42"></span>
+      <span style="--i: 25"></span>
+      <span style="--i: 18"></span>
+      <span style="--i: 31"></span>
+      <span style="--i: 10"></span>
+      <span style="--i: 43"></span>
+      <span style="--i: 26"></span>
+      <span style="--i: 17"></span>
+      <span style="--i: 25"></span>
+      <span style="--i: 28"></span>
+      <span style="--i: 31"></span>
+      <span style="--i: 26"></span>
+      <span style="--i: 18"></span>
+      <span style="--i: 40"></span>
+      <span style="--i: 46"></span>
+      <span style="--i: 24"></span>
+      <span style="--i: 50"></span>
+      <span style="--i: 48"></span>
+      <span style="--i: 29"></span>
+      <span style="--i: 27"></span>
+      <span style="--i: 12"></span>
+      <span style="--i: 22"></span>
+      <span style="--i: 30"></span>
+      <span style="--i: 33"></span>
+      <span style="--i: 15"></span>
+      <span style="--i: 43"></span>
+      <span style="--i: 16"></span>
+      <span style="--i: 37"></span>
+      <span style="--i: 16"></span>
+      <span style="--i: 24"></span>
+    </div>
+
+    <header>
+      <img
+        src="https://www.pkparaiso.com/rubi-omega-zafiro-alfa/pokedex-hoenn/pokedex.png"
+        alt="logo Pokedex"
+        class="imagenPokedex"
+      />
+      <input
+        type="text"
+        id="searchYourPokemon"
+        placeholder="Busca tu pokémon"
+      />
+      <!-- Quiero hacer un nav para filtrar los pokemon por tipos -->
+      <nav class="nav">
+        <ul class="nav-list">
+          <li class="nav-list-type">
+            <button
+              class="nav-list-button nav-list-button__todos"
+              id="ver-todos"
+            >
+              Ver todos
+            </button>
+          </li>
+          <li class="nav-list-type">
+            <button class="nav-list-button nav-list-button__normal" id="normal">
+              Normal
+            </button>
+          </li>
+          <li class="nav-list-type">
+            <button class="nav-list-button nav-list-button__fire" id="fire">
+              Fuego
+            </button>
+          </li>
+          <li class="nav-list-type">
+            <button class="nav-list-button nav-list-button__water" id="water">
+              Agua
+            </button>
+          </li>
+          <li class="nav-list-type">
+            <button class="nav-list-button nav-list-button__grass" id="grass">
+              Planta
+            </button>
+          </li>
+          <li class="nav-list-type">
+            <button
+              class="nav-list-button nav-list-button__electric"
+              id="electric"
+            >
+              Electricidad
+            </button>
+          </li>
+          <li class="nav-list-type">
+            <button class="nav-list-button nav-list-button__ground" id="ground">
+              Tierra
+            </button>
+          </li>
+          <li class="nav-list-type">
+            <button class="nav-list-button nav-list-button__rock" id="rock">
+              Roca
+            </button>
+          </li>
+          <li class="nav-list-type">
+            <button class="nav-list-button nav-list-button__poison" id="poison">
+              Veneno
+            </button>
+          </li>
+          <li class="nav-list-type">
+            <button
+              class="nav-list-button nav-list-button__psychic"
+              id="psychic"
+            >
+              Psíquico
+            </button>
+          </li>
+          <li class="nav-list-type">
+            <button class="nav-list-button nav-list-button__ice" id="ice">
+              Hielo
+            </button>
+          </li>
+          <li class="nav-list-type">
+            <button
+              class="nav-list-button nav-list-button__fighting"
+              id="fighting"
+            >
+              Lucha
+            </button>
+          </li>
+          <li class="nav-list-type">
+            <button class="nav-list-button nav-list-button__flying" id="flying">
+              Volador
+            </button>
+          </li>
+          <li class="nav-list-type">
+            <button class="nav-list-button nav-list-button__bug" id="bug">
+              Bicho
+            </button>
+          </li>
+          <li class="nav-list-type">
+            <button class="nav-list-button nav-list-button__ghost" id="ghost">
+              Fantasma
+            </button>
+          </li>
+          <li class="nav-list-type">
+            <button class="nav-list-button nav-list-button__dragon" id="dragon">
+              Dragon
+            </button>
+          </li>
+          <li class="nav-list-type">
+            <button class="nav-list-button nav-list-button__dark" id="dark">
+              Siniestro
+            </button>
+          </li>
+          <li class="nav-list-type">
+            <button class="nav-list-button nav-list-button__steel" id="steel">
+              Acero
+            </button>
+          </li>
+          <li class="nav-list-type">
+            <button class="nav-list-button nav-list-button__fairy" id="fairy">
+              Hada
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div class="pokedexTitle"><h1>Pokedex</h1></div>
+    <div class="container">
+        <div class="pokemons">
+      <ol id="pokedex"></ol>
+      <!-- Lista donde pintar todos los pokemon recuperados de la API -->
+    </div>
+  </body>
+</html>
